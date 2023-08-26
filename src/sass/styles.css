@@ -1,3 +1,33 @@
+@keyframes heartBeat {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes cup {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes sneakers {
+  from {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-25deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
 * {
   font-family: "Museo Sana Cyrl", sans-serif;
 }
@@ -138,6 +168,7 @@
 .advantages {
   height: 470px;
   padding: 70px 0 78px 0;
+  background-color: #f6f6f6;
 }
 .advantages__header {
   font-size: 30px;
@@ -165,6 +196,18 @@
   font-weight: 300;
   text-align: center;
   color: #0d0d0d;
+}
+.advantages__img_animate {
+  animation-name: heartBeat;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.advantages__img_cup {
+  animation: cup 3s linear infinite;
+}
+.advantages__img_sneakers {
+  animation: sneakers 2s linear infinite;
 }
 
 .consultation {

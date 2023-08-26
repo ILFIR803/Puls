@@ -1,6 +1,7 @@
 .advantages {
    height: 470px;
    padding: 70px 0 78px 0;
+   background-color: #f6f6f6;
    &__header {
       font-size: 30px;
       font-weight: 700;
@@ -30,5 +31,20 @@
       font-weight: 300;
       text-align: center;
       color: #0d0d0d;
+   }
+   &__img {
+      
+      &_animate {
+         animation-name: heartBeat;
+         animation-duration: 1.5s;
+         animation-timing-function: linear;
+         animation-iteration-count: infinite;
+      }
+      &_cup {
+         animation: cup 3s linear infinite;
+      }
+      &_sneakers {
+         animation: sneakers 2s linear infinite;
+      }
    }
 }
